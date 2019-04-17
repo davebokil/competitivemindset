@@ -1,2 +1,0 @@
-# competitivemindset
-CompetitiveMindset Website

@@ -1,160 +1,151 @@
 <!-- main background -->
-    <div class="bg-main">
-        {{!-- <div class="contact-bg">
-        </div> --}}
-    </div>
-    <!-- pjax container -->
-    <div id="pjax-container">
-        <div class="page-content p_scroll">
-            <div class="page-bg">
-                <!--  Title Contacts Page -->
-                <header class="header-pages">
-                    <div class="container">
-                        <div class="row">
-                            <div class="header-page-content">
-                                <h2>Register Now</h2>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <div class="container animation-content contacts">
+<div class="bg-main">
+    {{!-- <div class="contact-bg">
+    </div> --}}
+</div>
+<!-- pjax container -->
+<div id="pjax-container">
+    <div class="page-content p_scroll">
+        <div class="page-bg">
+            <!--  Title Contacts Page -->
+            <header class="header-pages">
+                <div class="container">
                     <div class="row">
-                        <!-- CONTACT INFO -->
-                        <!-- <div class="col-md-4 offset-md-1">
-                            <div class="contact-info">
-                                <h4 class="caption-400">Register Now</h4>
-                                <ul class="personal-info">
-                                    <li>
-                                        <p><span class="caption-500">Adress - </span>James Doe</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="caption-500">Phone - </span>12 Dec 1990</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="caption-500">email - </span>British</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> -->
-                        <div class="col-md-12">
-
-<form method="post" action="send">
-    <div class="form-row">
-        {{!-- Name --}}
-        <div class="form-group col-md-12">
-            <input class="form-control" type="text" placeholder="Enter name" id="nameInput" name="name" required oninvalid="this.setCustomValidity('Please enter your name')"
-            oninput="this.setCustomValidity('')">
-        </div>
-        {{!-- Age --}}
-        <div class="form-group col-md-6 col-sm-6">
-            <input type="number" class="form-control" id="age" placeholder="Age" data-error="Please enter your age" name="age" required oninvalid="this.setCustomValidity('Please enter your age')"
-            oninput="this.setCustomValidity('')">
-        </div>
-        {{!-- Grade --}}
-        <div class="form-group col-md-6 col-sm-6 ">
-            <input type="text" class="form-control" id="grade" placeholder="Grade" name="grade" required oninvalid="this.setCustomValidity('Please enter your grade')"
-            oninput="this.setCustomValidity('')">
-        </div>
-        {{!-- Sport --}}
-        <div class="form-group col-md-12">
-            <textarea id="sportposition" class="form-control" rows="5" placeholder="Sport(s) & Position(s)" name="position" required oninvalid="this.setCustomValidity('Please enter a sport')"
-            oninput="this.setCustomValidity('')"></textarea>
-        </div>
-        {{!-- Hometown --}}
-        <div class="form-group col-md-12">
-            <textarea id="hometown" class="form-control" rows="5" placeholder="Hometown" name="hometown" required oninvalid="this.setCustomValidity('Please enter your hometown')"
-            oninput="this.setCustomValidity('')"></textarea>
-        </div>
-        {{!-- School Town and Location --}}
-        <div class="form-group col-md-12">
-            <input type="text" class="form-control" id="school" placeholder="School Name and Location" name="school" required oninvalid="this.setCustomValidity('Please enter your school name and location')"
-            oninput="this.setCustomValidity('')">
-        </div>
-        {{!-- Club Team(s) --}}
-        <div class="form-group col-md-12">
-            <input type="text" class="form-control" id="club" placeholder="Club Team(s) (if applicable)" name="club">
-        </div>
-        {{!-- Height --}}
-        <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="height" placeholder="Height" name="height" required>
-        </div>
-        {{!-- Weight --}}
-        <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="weight" placeholder="Weight" name="weight" required>
-        </div>
-        {{!-- Email --}}
-        <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
-        </div>
-        {{!-- Parent Email --}}
-        <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="parentemail" placeholder="Email of Parent/Guardian" name="parentemail" required>
-        </div>
-        {{!-- Phone --}}
-        <div class="form-group col-md-6">
-            <input type="tel" class="form-control" id="phone" placeholder="Phone Number" name="phone" required>
-        </div>
-        <div class="col-md-12">
-            <p style="text-decoration: underline;">Brief Questionnaire</p>
-            <br>
-        </div>
-        {{!-- At What Age --}}
-        <div class="form-group col-md-12">
-            <textarea id="atwhatage" class="form-control" rows="5" placeholder="At what age did you start playing sports? Why did you start?" name="atwhatage" required></textarea>
-        </div>
-        {{!-- What’s the highest level anyone in your family has played? --}}
-        <div class="form-group col-md-12">
-            <textarea id="family" class="form-control" rows="5" placeholder="What’s the highest level anyone in your family has played?" name="family" required></textarea>
-        </div>
-        {{!-- What are you desired short term goals in athletics? --}}
-        <div class="form-group col-md-12">
-            <textarea id="shortterm" class="form-control" rows="5" placeholder="What are your desired short term goals in athletics?" name="shortterm" required></textarea>
-        </div>
-        {{!-- What are your desired long term goals in athletics? --}}
-        <div class="form-group col-md-12">
-            <textarea id="longterm" class="form-control" rows="5" placeholder="What are your desired long term goals in athletics?" name="longterm" required></textarea>
-        </div>
-        {{!-- What are your academic goals? --}}
-        <div class="form-group col-md-12">
-            <textarea id="academic" class="form-control" rows="5" placeholder="What are your academic goals?" name="academic" required></textarea>
-        </div>
-        {{!-- Where do you see yourself five years from today? --}}
-        <div class="form-group col-md-12">
-            <textarea id="fiveyears" class="form-control" rows="5" placeholder="Where do you see yourself five years from today?" name="fiveyears" required></textarea>
-        </div>
-        {{!-- What do you see as your biggest hurdle to achieving your athletic goals? --}}
-        <div class="form-group col-md-12">
-            <textarea id="hurdle" class="form-control" rows="5" placeholder="What do you see as your biggest hurdle to achieving your athletic goals?" name="hurdle" required></textarea>
-        </div>
-        {{!-- What are your three strongest qualities as an athlete? --}}
-        <div class="form-group col-md-12">
-            <textarea id="athlete" class="form-control" rows="5" placeholder="What are your three strongest qualities as an athlete?" name="athlete" required></textarea>
-        </div>
-        {{!-- What are your three strongest qualities as an individual? --}}
-        <div class="form-group col-md-12">
-            <textarea id="individual" class="form-control" rows="5" placeholder="What are your three strongest qualities as an individual?" name="individual" required></textarea>
-        </div>
-        {{!-- What would you ideally like to achieve by enrolling in our 6-week Program --}}
-        <div class="form-group col-md-12">
-            <textarea id="enroll" class="form-control" rows="5" placeholder="What would you ideally like to achieve by enrolling in our 4-week Program?" name="enroll" required></textarea>
-        </div>
-        {{!-- How did you hear about us? --}}
-        <div class="form-group col-md-12">
-            <textarea id="hear" class="form-control" rows="5" placeholder="How did you hear about us?" name="hear" required></textarea>
-        </div>
-        
-        {{!-- Submit Button --}}
-        <input class="button btn-1 btn-1c submitter" type="submit" value="Submit" style="color: #fff">
-    <div>
-
-</form>
-                            <!-- /#contactForm -->
+                        <div class="header-page-content">
+                            <h2>Register</h2>
                         </div>
                     </div>
-                    <!-- /.row -->
                 </div>
-                <!-- /.container -->
+            </header>
+            <div class="container animation-content ">
+                <div class="row post-2">
+                    <div class="col-md-12">
+                        <h4 class="caption-400">General Inquires</h4>
+                    </div>
+                </div>
+                <div class="row post-3" style="margin-top: 25px;">
+                    <div class="col-md-8 news-post">
+                        <h5>Email: <a href="mailto:competitivemindset@gmail.com">competitivemindset@gmail.com</a></h5>
+                        <h5>Phone: <a href="tel:781-570-3264">(781) 570-3264</a></h5>
+                    </div>
+                    <!-- /.news-post -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 20px;">
+                        <h4 class="caption-400">Registration Form</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form method="post" action="send">
+                            <div class="form-row">
+                                {{!-- Name --}}
+                                <div class="form-group col-md-12">
+                                    <input class="form-control" type="text" placeholder="Enter name" id="nameInput" name="name" required oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')">
+                                </div>
+                                {{!-- Age --}}
+                                <div class="form-group col-md-6 col-sm-6">
+                                    <input type="number" class="form-control" id="age" placeholder="Age" data-error="Please enter your age" name="age" required oninvalid="this.setCustomValidity('Please enter your age')" oninput="this.setCustomValidity('')">
+                                </div>
+                                {{!-- Grade --}}
+                                <div class="form-group col-md-6 col-sm-6 ">
+                                    <input type="text" class="form-control" id="grade" placeholder="Grade" name="grade" required oninvalid="this.setCustomValidity('Please enter your grade')" oninput="this.setCustomValidity('')">
+                                </div>
+                                {{!-- Sport --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="sportposition" class="form-control" rows="5" placeholder="Sport(s) & Position(s)" name="position" required oninvalid="this.setCustomValidity('Please enter a sport')" oninput="this.setCustomValidity('')"></textarea>
+                                </div>
+                                {{!-- Hometown --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="hometown" class="form-control" rows="5" placeholder="Hometown" name="hometown" required oninvalid="this.setCustomValidity('Please enter your hometown')" oninput="this.setCustomValidity('')"></textarea>
+                                </div>
+                                {{!-- School Town and Location --}}
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="school" placeholder="School Name and Location" name="school" required oninvalid="this.setCustomValidity('Please enter your school name and location')" oninput="this.setCustomValidity('')">
+                                </div>
+                                {{!-- Club Team(s) --}}
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" id="club" placeholder="Club Team(s) (if applicable)" name="club">
+                                </div>
+                                {{!-- Height --}}
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="height" placeholder="Height" name="height" required>
+                                </div>
+                                {{!-- Weight --}}
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="weight" placeholder="Weight" name="weight" required>
+                                </div>
+                                {{!-- Email --}}
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                                </div>
+                                {{!-- Parent Email --}}
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="parentemail" placeholder="Email of Parent/Guardian" name="parentemail" required>
+                                </div>
+                                {{!-- Phone --}}
+                                <div class="form-group col-md-6">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" name="phone" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <p style="text-decoration: underline;">Brief Questionnaire</p>
+                                    <br>
+                                </div>
+                                {{!-- At What Age --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="atwhatage" class="form-control" rows="5" placeholder="At what age did you start playing sports? Why did you start?" name="atwhatage" required></textarea>
+                                </div>
+                                {{!-- What’s the highest level anyone in your family has played? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="family" class="form-control" rows="5" placeholder="What’s the highest level anyone in your family has played?" name="family" required></textarea>
+                                </div>
+                                {{!-- What are you desired short term goals in athletics? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="shortterm" class="form-control" rows="5" placeholder="What are your desired short term goals in athletics?" name="shortterm" required></textarea>
+                                </div>
+                                {{!-- What are your desired long term goals in athletics? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="longterm" class="form-control" rows="5" placeholder="What are your desired long term goals in athletics?" name="longterm" required></textarea>
+                                </div>
+                                {{!-- What are your academic goals? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="academic" class="form-control" rows="5" placeholder="What are your academic goals?" name="academic" required></textarea>
+                                </div>
+                                {{!-- Where do you see yourself five years from today? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="fiveyears" class="form-control" rows="5" placeholder="Where do you see yourself five years from today?" name="fiveyears" required></textarea>
+                                </div>
+                                {{!-- What do you see as your biggest hurdle to achieving your athletic goals? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="hurdle" class="form-control" rows="5" placeholder="What do you see as your biggest hurdle to achieving your athletic goals?" name="hurdle" required></textarea>
+                                </div>
+                                {{!-- What are your three strongest qualities as an athlete? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="athlete" class="form-control" rows="5" placeholder="What are your three strongest qualities as an athlete?" name="athlete" required></textarea>
+                                </div>
+                                {{!-- What are your three strongest qualities as an individual? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="individual" class="form-control" rows="5" placeholder="What are your three strongest qualities as an individual?" name="individual" required></textarea>
+                                </div>
+                                {{!-- What would you ideally like to achieve by enrolling in our 6-week Program --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="enroll" class="form-control" rows="5" placeholder="What would you ideally like to achieve by enrolling in our program?" name="enroll" required></textarea>
+                                </div>
+                                {{!-- How did you hear about us? --}}
+                                <div class="form-group col-md-12">
+                                    <textarea id="hear" class="form-control" rows="5" placeholder="How did you hear about CompetitiveMindset?" name="hear" required></textarea>
+                                </div>
+                                {{!-- Submit Button --}}
+                                <input class="button btn-1 btn-1c submitter" type="submit" value="Submit" style="color: #fff">
+                                <div>
+                        </form>
+                        <!-- /#contactForm -->
+                    </div>
+                </div>
+                <!-- /.row -->
             </div>
+            <!-- /.container -->
         </div>
-        <!-- /.header-content -->
     </div>
+    <!-- /.header-content -->
+</div>

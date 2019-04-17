@@ -702,6 +702,11 @@ a:hover {
 .block-3 p,
 .block-4 p {
   margin-top: 11px;
+  margin-left: 20px;
+}
+
+.block-1, .block-2, .block-3, .block-4 {
+  margin-bottom: 50px;
 }
 .block-3,
 .block-4 {

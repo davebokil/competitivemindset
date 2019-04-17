@@ -8,11 +8,11 @@ router.get('/', function(req, res){
 	res.render('index');
 });
 
-router.get('/program', function(req, res){
+router.get('/programs', function(req, res){
 	res.render('program');
 });
 
-router.get('/mentors', function(req, res){
+router.get('/mentor', function(req, res){
 	res.render('mentors');
 });
 
