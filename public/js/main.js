@@ -261,9 +261,10 @@ $(document).ready(function() {
         /* Instagram
     * ------------------------------------------------------ */
 
+        
+
         function instagram() {
-                    // var accessToken = '26559007.7cf16f7.2f18b739a27446cdaa9de1ea63cfe203';
-        var accessToken = '8460580465.1677ed0.15c2b860272942c08558cd41a34283ba';
+            var accessToken = '8460580465.fb0c407.c6a9fb13c1bf429e8dafd89a01ff893b';
         
               $.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token='+accessToken+'&callback=?',function (insta) {
                 $.each(insta.data,function (photos,src) {
