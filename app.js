@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var expressValidator = require('express-validator');
 var flash = require('connect-flash');
+var enforce = require('express-sslify');
 // var session = require('express-session');
 // var passport = require('passport');
 // var LocalStrategy = require('passport-local').Strategy;
@@ -26,6 +27,9 @@ var routes = require('./routes/index');
 
 // Init App
 var app = express();
+
+// Enforce HTTPS
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
